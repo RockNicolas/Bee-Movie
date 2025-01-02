@@ -8,14 +8,14 @@
     font-size: 22px;
     margin-top: -20px;
     padding-top: 0;
-    color: #000000;
+    color: #ffffff;
 }
 
 #introducao {
     font-size: 30px;
     margin-top: -5px;
     padding-top: 0;
-    color: #000000;
+    color: #ffffff;
 }
 
 body {
@@ -205,9 +205,8 @@ footer {
     }
 }
 
-/* O botão é ocultado por padrão */
 #playButton {
-    display: none; /* Oculta o botão por padrão */
+    display: none; 
     padding: 10px 20px;
     font-size: 16px;
     background-color: #4CAF50;
@@ -221,9 +220,8 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     #playButton {
-        display: block; /* O botão aparece apenas em telas menores que 768px */
+        display: block; 
     }
 }
