@@ -8,25 +8,37 @@
     font-size: 22px;
     margin-top: -20px;
     padding-top: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 #introducao {
     font-size: 30px;
     margin-top: -5px;
     padding-top: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 body {
     font-family: Arial, sans-serif;
     color: white;
-    min-height: 100vh; 
-    background-image: url('/img/bee-inside-the-hive-0kh3hlkz6mlq8fab.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+  
+.background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    z-index: -1; 
+}
+  
 
 header {
     background-color: #ffcc00;
