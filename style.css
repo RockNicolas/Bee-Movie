@@ -205,14 +205,26 @@ footer {
     }
 }
 
-/* O botão é oculto por padrão */
+/* O botão é ocultado por padrão */
 #playButton {
     display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Centralizar horizontal e verticalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     #playButton {
-        display: block; /* O botão fica visível apenas em telas menores que 768px */
+        display: block; /* O botão se torna visível apenas em telas menores que 768px */
     }
 }
