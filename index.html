@@ -23,8 +23,14 @@
             <p>a abelha safada da flavinha</p>
             <p>Clique na foto da safada da Flavia</p>
             <img src="img/340d0b6e-1981-43fe-b28c-ed7e9ec11ffb.jpg" class="foto" id="imagem" onclick="playAudio()">
-            <audio id="audio" src="WhatsApp Audio 2025-01-02 at 15.52.17.ogg" preload="auto"></audio>
+            <audio id="audio">
+                <source src="WhatsApp Audio 2025-01-02 at 15.52.17.ogg" type="audio/ogg">
+                <source src="WhatsApp Audio 2025-01-02 at 15.52.17.mp3" type="audio/mp3">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+            
             <button id="playButton" class="mobile-only">Reproduzir Áudio</button>
+            
         </div>
     </section>
 
@@ -51,12 +57,16 @@
 
         document.getElementById('playButton').addEventListener('click', function() {
             var audio = document.getElementById("audio");
-                audio.play().then(function() {
-                    console.log("Áudio reproduzido com sucesso");
-                }).catch(function(error) {
-                    console.log("Erro ao tentar reproduzir áudio:", error);
-                });
+
+            // Tenta reproduzir o áudio e adicionar uma resposta de sucesso ou falha
+            audio.play().then(function() {
+                console.log("Áudio reproduzido com sucesso!");
+            }).catch(function(error) {
+                // Exibe um erro, caso o áudio não possa ser reproduzido
+                console.log("Erro ao tentar reproduzir áudio:", error);
             });
+        });
+
 
     </script>
 </body>
