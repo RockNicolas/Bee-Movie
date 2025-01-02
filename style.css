@@ -204,3 +204,15 @@ footer {
         padding: 10px 0;
     }
 }
+
+/* O botão é oculto por padrão */
+#playButton {
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    #playButton {
+        display: block; /* O botão fica visível apenas em telas menores que 768px */
+    }
+}

@@ -21,8 +21,10 @@
         <div class="container">
             <h2>Introdução</h2>
             <p>a abelha safada da flavinha</p>
+            <p>Clique na foto da safada da Flavia</p>
             <img src="img/340d0b6e-1981-43fe-b28c-ed7e9ec11ffb.jpg" class="foto" id="imagem" onclick="playAudio()">
             <audio id="audio" src="WhatsApp Audio 2025-01-02 at 15.52.17.ogg" preload="auto"></audio>
+            <button id="playButton" class="mobile-only">Reproduzir Áudio</button>
         </div>
     </section>
 
@@ -46,6 +48,16 @@
             var audio = document.getElementById("audio");
             audio.play();
         }
+
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById("audio");
+                audio.play().then(function() {
+                    console.log("Áudio reproduzido com sucesso");
+                }).catch(function(error) {
+                    console.log("Erro ao tentar reproduzir áudio:", error);
+                });
+            });
+
     </script>
 </body>
 </html>
